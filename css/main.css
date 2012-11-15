@@ -52,10 +52,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-body {background: #fff url(../img/bg.png);font-family: "Segoe UI", Sans-Serif;color: #040707;}
-.phi {max-width: 80%;margin: 13% 0 0 20%;}
-h1 {font-weight: normal;font-size: 42px;line-height: 42px;text-shadow: 1px 1px 0 #DFDFDF;letter-spacing: -1px;}
+body {background: #061111;font-family: "Segoe UI", Sans-Serif;color: #fff;}
+.phi {max-width: 80%;margin: 3% 0 0 20%;}
+h1 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px;}
 h2 {font-weight:bold; font-size:24px; margin:4em 0 0}
 
 
