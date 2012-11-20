@@ -58,8 +58,14 @@ body {background-color: black;font-family: "Segoe UI", Sans-Serif;color: #fff;}
 .disabled {visibility:hidden;}
 .phi {max-width: 80%;margin: 3% 0 0 20%;}
 h1 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px;}
+<<<<<<< HEAD
 h2 {font-weight: normal; font-size:1.5em; margin:15em 0 0}
 
+=======
+h2 {font-weight: normal;font-size: 24px;margin: 4em 0 0;letter-spacing: 2px;}
+h2 a {color: #fff;text-decoration: none;}
+h2 a:hover {border-bottom: 1px solid rgb(107, 107, 107);}
+>>>>>>> e4630f12046b2b3dda32498ef017680c9b2c9936
 
 
 
