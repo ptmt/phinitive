@@ -52,10 +52,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {background: #061111;font-family: "Segoe UI", Sans-Serif;color: #fff;}
+body {background-color: black;font-family: "Segoe UI", Sans-Serif;color: #fff;}
+.back144 {background:url('../img/siberia1.jpg');background-repeat: no-repeat}
+@media (max-width: 1920px)  .back144{background-size: 100%;}
+.disabled {visibility:hidden;}
 .phi {max-width: 80%;margin: 3% 0 0 20%;}
 h1 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px;}
-h2 {font-weight:bold; font-size:24px; margin:4em 0 0}
+h2 {font-weight: normal; font-size:1.5em; margin:15em 0 0}
 
 
 
