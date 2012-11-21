@@ -52,14 +52,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {background-color: black;font-family: "Segoe UI", Sans-Serif;color: #fff;}
-.back144 {background:#000 url('../img/siberia1.jpg') no-repeat center center fixed;background-repeat: no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
-.phi {max-width: 80%;margin: 3% 0 0 20%;}
+body {background-color: black; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;font-family: "Segoe UI", Sans-Serif;color: #fff;}
+.siberia0 {background-image: url('../img/siberia0.jpg');}
+.siberia1 {background-image: url('../img/siberia1.jpg');}
+.phi {max-width: 80%;margin: 3% 0 0 20%; padding: 1em;background:#ccc;background: rgba(0,0,0,.5);float: left;}
 h1 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px;}
-h2 {font-weight: normal; font-size:1.5em; margin:15em 0 0}
+h2 {font-weight: normal; font-size:1.5em;}
 h2 a {color: #fff;text-decoration: none;}
-h2 a:hover {border-bottom: 1px solid rgb(107, 107, 107);}
-
+h2 a:hover {border-bottom: 1px solid #fff;}
 
 
 
