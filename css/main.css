@@ -53,8 +53,6 @@ textarea {
    ========================================================================== */
 
 body {background-color: black; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;font-family: "Segoe UI", Sans-Serif;color: #fff;}
-.siberia0 {background-image: url('../img/siberia0.jpg');}
-.siberia1 {background-image: url('../img/siberia1.jpg');}
 .phi {max-width: 80%;margin: 3% 0 0 20%; padding: 1em;background:#ccc;background: rgba(0,0,0,.5);float: left; position:relative; z-index:2}
 h1 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px;}
 h2 {font-weight: normal; font-size:1.5em;}
