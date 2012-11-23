@@ -1,4 +1,4 @@
-phinitive
+in phinitive we trust
 =========
 
 I'm glad you ask. 
