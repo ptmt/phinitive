@@ -1,7 +1,5 @@
 $(function(){
 
-//   $('body').css('background-image','url(img/siberia0.jpg)')
-
     var Siberia = {
         siberia0: 'а ведь когда я открывал браузер, на улице стояло лето',
         siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
@@ -13,15 +11,48 @@ $(function(){
     for(sight in Siberia){
         sights++;
     }
+    
+
    
     var luck = Math.floor(Math.random()*sights) + 1;
+    var destiny = false;
     if(window.location.hash &&  /#\d+/.test(window.location.hash)){    
-       var destiny = +window.location.hash.replace('#','')
+       destiny = +window.location.hash.replace('#','');
        if(destiny <= sights) {
            luck = destiny;
        }
     }
     
+    
+    var seen = null;
+    if(Modernizr.localstorage){
+        seen = localStorage.seen ? localStorage.seen.split(',') : [luck];
+    }
+    var luckLoop = function() {
+        if(seen && !destiny){
+            var already = false;
+            for (var i=0; i<seen.length; i++){
+                if(seen[i] == luck){
+                    already = true;
+                }
+            }
+            if(already){
+                luck = Math.floor(Math.random()*sights) + 1;
+                luckLoop();
+            } else {
+                var history = Math.floor(sights/2);
+                var next = seen;
+                if(next.length == history){
+                   next.shift();
+                }
+               next.push(luck);
+               localStorage.seen = next.join(',');
+            }
+        }    
+    };
+    
+    luckLoop();
+
     var showSiberia = function(sight){
         var goto = sight || luck;
         var walk = 0;
@@ -29,11 +60,11 @@ $(function(){
             walk++;
             if(walk == goto){
                 $('body').css('background-image','url(img/'+sight+'.jpg)');
-                $('h1').html(Siberia[sight])
+                $('h1').html(Siberia[sight]);
             }
         }
-    }
-    
+    };
+      
     var input = [];
     var code = '103,111';
     $(document).on('keypress', function(e){
@@ -52,3 +83,33 @@ $(function(){
     
     showSiberia(luck);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
