@@ -55,13 +55,21 @@ a { color:#fff;text-decoration:none}
 a:hover {color: #ccc;text-decoration:underline}
 
 body {background-color: black; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-size: cover;font-family: "Segoe UI", Sans-Serif;color: #fff;}
-    .phinitive, footer, .team {max-width: 80%;margin: 3% 0 0 20%; padding: 1em;background:#ccc;background: rgba(0,0,0,.5);float: left; position:relative; z-index:2}
-    .team { display:none}    
-        
+    .phinitive, footer, .team {max-width: 80%;margin: 3% 0 0 20%; padding: 1em;background:#ccc;background: rgba(0,0,0,.5);float: left; position:relative; z-index:2}            
+        .phinitive .who {font-size: 2em; float:right}  
         .phinitive ul {margin:0 auto; padding:0; width:400px; }
             .phinitive .icon {color: #ccc;text-decoration:none}
-            .phinitive ul li {list-style:none; }
-            /*.no-touch .phinitive ul .phi {text-align:right; }*/
+    .team { display:none; padding:50px;background: rgba(0,0,0,.8);}    
+        .team .role {font-size: 0.8em;float:right;color:#ccc}  
+       /* .team .name {float:left;}    */
+        .team .site, .twitter {display:inline;padding-left:5px}
+        .team .site {font-size:.8em;float:right;color:#ccc}
+        .team ul {margin:0 auto; padding:0; width:500px; }
+        .team ul li {list-style:none;float:left;padding-left:40px;width:200px; } 
+        .team .person-about span {position:absolute;top:-50px}
+            /*.dima {float:left;position:relative}
+            .roma {float:right;position:relative}
+            .no-touch .phinitive ul .phi {text-align:right; }*/
             .touch .phinitive ul li { float:none}
 
             
@@ -78,7 +86,7 @@ body {background-color: black; background-repeat: no-repeat; background-position
 h1, h3 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px; margin-top:0}
 h3 {font-size: 1.5em;}
 .dots{ position:fixed; top:0; right:0; bottom:0; left:0; background:url(../img/dot-pattern.png); z-index:1; opacity:.6}
-footer{color:#ccc;position: fixed;z-index: 20;bottom: 10px;left: 20%;}
+footer{font-size:10px;color:#ccc;position: fixed;z-index: 20;bottom: 10px;left: 20%;}
 
 
 
