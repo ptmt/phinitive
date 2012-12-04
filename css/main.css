@@ -86,7 +86,7 @@ body {background-color: black; background-repeat: no-repeat; background-position
 h1, h3 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px; margin-top:0}
 h3 {font-size: 1.5em;}
 .dots{ position:fixed; top:0; right:0; bottom:0; left:0; background:url(../img/dot-pattern.png); z-index:1; opacity:.6}
-footer{font-size:10px;color:#ccc;position: fixed;z-index: 20;bottom: 10px;left: 20%;}
+footer{background:none;font-size:10px;color:#ccc;position: fixed;z-index: 20;bottom: 10px;left: 20%;text-shadow: 1px 1px 0 #111;}
 
 
 
