@@ -58,35 +58,19 @@ body {background-color: black; background-repeat: no-repeat; background-position
     .phinitive, footer, .team {max-width: 80%;margin: 3% 0 0 20%; padding: 1em;background:#ccc;background: rgba(0,0,0,.5);float: left; position:relative; z-index:2}            
         .phinitive .who {font-size: 2em; float:right}  
         .phinitive ul {margin:0 auto; padding:0; width:400px; }
-            .phinitive .icon {color: #ccc;text-decoration:none}
-    .team { display:none; padding:50px;background: rgba(0,0,0,.8);}    
-        .team .role {font-size: 0.8em;float:right;color:#ccc}  
-       /* .team .name {float:left;}    */
-        .team .site, .twitter {display:inline;padding-left:5px}
-        .team .site {font-size:.8em;float:right;color:#ccc}
-        .team ul {margin:0 auto; padding:0; width:500px; }
-        .team ul li {list-style:none;float:left;padding-left:40px;width:200px; } 
-        .team .person-about span {position:absolute;top:-50px}
-            /*.dima {float:left;position:relative}
-            .roma {float:right;position:relative}
-            .no-touch .phinitive ul .phi {text-align:right; }*/
-            .touch .phinitive ul li { float:none}
+            .phinitive .icon {color: #ccc;text-decoration:none; padding:1em}
+    .team { display:none; padding:1em; background: rgba(0,0,0,.8);}    
+        .team .meta {font-size: 0.8em;color:#ccc}
+        .team .person .twitter {padding:0 0 0 16px; background:url(../img/bird_blue_16.png) 0 4px no-repeat}
+        .team .person img {width:inherit}
+        .team ul {margin:0 auto; padding:0; }
+        .team ul li {list-style:none;float:left;width:200px;margin: 0 1em 0 0; } 
+        .team .about {line-height:1.1}
 
-            
-               /* .phinitive ul li a {display:block;width:200px; padding:7px 0; text-decoration:none; text-shadow: 1px 1px 0 #000;}
-                    .phinitive ul li a span {transition:width 0.5s ease; text-decoration:underline; display:inline-block; width:0; overflow:hidden;}
-                    .phinitive ul li a i {transition:width 0.5s ease; font-style:normal; }
-                    .phinitive ul .phi a:hover span,
-                    .touch .phinitive ul .phi a span{width:35px;}
-                    .phinitive ul .inf a:hover span,
-                    .touch .phinitive ul .inf a span {width:125px;}
-                    
-                    .phinitive ul li a:hover {color:#f5f5f5; text-shadow: 1px 1px 0 #333;}*/
-                    
 h1, h3 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px; margin-top:0}
 h3 {font-size: 1.5em;}
 .dots{ position:fixed; top:0; right:0; bottom:0; left:0; background:url(../img/dot-pattern.png); z-index:1; opacity:.6}
-footer{font-size:10px;color:#ccc;position: fixed;z-index: 20;bottom: 10px;left: 20%;}
+footer{font-size:10px;color:#ccc;position: fixed;z-index: 20;bottom: 10px; padding:.3em}
 
 
 

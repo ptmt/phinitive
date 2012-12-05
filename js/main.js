@@ -1,6 +1,6 @@
 $(function(){
 
-    $('.show-team').on ('click', function (){$('.team').toggle();})
+    $('.show-team').on('click', function (){$('.team').toggle();})
     var Siberia = {
         siberia0: 'а ведь когда я открывал браузер, на улице стояло лето',
         siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
@@ -17,11 +17,16 @@ $(function(){
    
     var luck = Math.floor(Math.random()*sights) + 1;
     var destiny = false;
-    if(window.location.hash &&  /#\d+/.test(window.location.hash)){    
-       destiny = +window.location.hash.replace('#','');
-       if(destiny <= sights) {
-           luck = destiny;
-       }
+    if(window.location.hash){     
+        if(/#\d+/.test(window.location.hash)){
+           destiny = +window.location.hash.replace('#','');
+           if(destiny <= sights) {
+               luck = destiny;
+           }
+        } else {
+            $(window.location.hash).show();
+        }
+        
     }
     
     
@@ -64,6 +69,7 @@ $(function(){
                 $('h1').html(Siberia[sight]);
             }
         }
+        $('.team').width($('.phinitive').width());
     };
       
     var input = [];
