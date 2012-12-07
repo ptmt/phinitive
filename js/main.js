@@ -1,6 +1,8 @@
 $(function(){
 
-    $('.show-team').on('click', function (){$('.team').toggle();})
+    $('.show-team').on('click', function (){
+        window.location.hash = $('.team').toggle().is(':visible') ? 'team' : '';
+    })
     var Siberia = {
         siberia0: 'а ведь когда я открывал браузер, на улице стояло лето',
         siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
@@ -14,8 +16,6 @@ $(function(){
         sights++;
     }
     
-
-   
     var luck = Math.floor(Math.random()*sights) + 1;
     var destiny = false;
     if(window.location.hash){     
@@ -29,7 +29,6 @@ $(function(){
         }
         
     }
-    
     
     var seen = null;
     if(Modernizr.localstorage){
