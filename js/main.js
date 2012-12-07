@@ -2,6 +2,7 @@ $(function(){
 
     $('.show-team').on('click', function (){
         window.location.hash = $('.team').toggle().is(':visible') ? 'team' : '';
+        return false;
     })
     var Siberia = {
         siberia0: 'а ведь когда я открывал браузер, на улице стояло лето',
