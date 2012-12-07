@@ -70,7 +70,6 @@ $(function(){
                 $('h1').html(Siberia[sight]);
             }
         }
-        $('.team').width($('.phinitive').width());
     };
       
     var input = [];
