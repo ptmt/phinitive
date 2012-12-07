@@ -51,29 +51,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+h1, h3 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px; margin-top:0}
+h3 {font-size: 1.5em;}
 a { color:#fff;text-decoration:none}
 a:hover {color: #ccc;text-decoration:underline}
 
 body {background-color: black; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-size: cover;font-family: "Segoe UI", Sans-Serif;color: #fff;}
-    .phinitive, footer, .team {max-width: 80%;margin: 3% 0 0 20%; padding: 1em;background:#ccc;background: rgba(0,0,0,.5);float: left; position:relative; z-index:2}            
+.dots{ position:fixed; top:0; right:0; bottom:0; left:0; background:url(../img/dot-pattern.png); z-index:1; opacity:.6}
+    .phinitive, footer{max-width: 80%;margin: 3% 0 0 20%; padding: 1em;background:#ccc;background: rgba(0,0,0,.5);float: left; position:relative; z-index:2;}            
         .phinitive .who {font-size: 2em; float:right}  
         .phinitive ul {margin:0 auto; padding:0; width:400px; }
-            .phinitive .icon {color: #ccc;text-decoration:none; padding:1em}
-    .team { display:none; padding:1em; background: rgba(0,0,0,.8);}    
-        .team .meta {font-size: 0.8em;color:#ccc}
-        .team .person .twitter {padding:0 0 0 16px; background:url(../img/bird_blue_16.png) 0 4px no-repeat}
-        .team .person img {width:inherit}
-        .team ul {margin:0 auto; padding:0; }
-        .team ul li {list-style:none;float:left;width:200px;margin: 0 1em 0 0; } 
-        .team .about {line-height:1.1}
-
-h1, h3 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px; margin-top:0}
-h3 {font-size: 1.5em;}
-.dots{ position:fixed; top:0; right:0; bottom:0; left:0; background:url(../img/dot-pattern.png); z-index:1; opacity:.6}
-footer{font-size:10px;color:#ccc;position: fixed;z-index: 20;bottom: 10px; padding:.3em}
-
-
-
+    .team { display:none; padding: 1em;background: rgba(0, 0, 0, .8);max-width: 700px;float: left;margin: 3% 0 0 20%;width: 50%;z-index: 2;position: relative;}    
+footer{font-size:10px;color:#ccc;position: fixed;z-index: 20;bottom: 10px; padding:.3em;opacity: .5;transition:opacity .4s ease}
+footer:hover, .touch footer {opacity:1;}
 
 
 
@@ -82,14 +72,21 @@ footer{font-size:10px;color:#ccc;position: fixed;z-index: 20;bottom: 10px; paddi
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
-}
-
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
         h1 { font-size:1.75em}
 }
+@media only screen
+    and (max-width: 768px) {
+        .phinitive, .team{ margin:0; width:100%; max-width:100%;box-sizing: border-box; }
+        .team { margin:1em 0}
+        footer { margin: 0; width:100%; max-width:100%;}
+}
+@media only screen
+    and (max-width: 400px) {
+        footer {position:static}
+}
+
 
 /* ==========================================================================
    Helper classes
