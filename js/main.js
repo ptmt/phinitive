@@ -25,7 +25,7 @@ $(function(){
                luck = destiny;
            }
         } else {
-            $(window.location.hash).show();
+            $(window.location.hash.replace('#','.')).show();
         }
         
     }
@@ -70,6 +70,7 @@ $(function(){
                 $('h1').html(Siberia[sight]);
             }
         }
+        $('.team').width($('.phinitive').width());
     };
       
     var input = [];
