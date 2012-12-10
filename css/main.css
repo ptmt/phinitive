@@ -85,6 +85,7 @@ footer:hover, .touch footer {opacity:1;}
 @media only screen
     and (max-width: 400px) {
         footer {position:relative; z-index:2}
+        h1 { font-size:1.5em}
 }
 
 
