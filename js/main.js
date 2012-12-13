@@ -1,12 +1,16 @@
 $(function(){
 
-    $('.show-team').on('click', function (){$('.team').toggle();})
+    $('.show-team').on('click', function (){
+        window.location.hash = $('.team').toggle().is(':visible') ? 'team' : '';
+        return false;
+    })
     var Siberia = {
         siberia0: 'а ведь когда я открывал браузер, на улице стояло лето',
-        siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
+        siberia1: 'делаем сайты, чтобы не мерзнуть',
         siberia2: 'поднимаем в облака, чтобы не занесло снегом',
         siberia3: 'надежная опора из бесценных знаний',
-        siberia4: 'конструкции должны быть адаптивными — знаем с детства'
+        siberia4: 'конструкции должны быть адаптивными — знаем с детства',
+        siberia5: 'наслаждаемся фрилансом в Сибири — с пляжем, солнцем и даже почти бикини'
     };
     
     var sights = 0;
@@ -14,8 +18,6 @@ $(function(){
         sights++;
     }
     
-
-   
     var luck = Math.floor(Math.random()*sights) + 1;
     var destiny = false;
     if(window.location.hash){     
@@ -29,7 +31,6 @@ $(function(){
         }
         
     }
-    
     
     var seen = null;
     if(Modernizr.localstorage){
@@ -70,7 +71,6 @@ $(function(){
                 $('h1').html(Siberia[sight]);
             }
         }
-        $('.team').width($('.phinitive').width());
     };
       
     var input = [];
