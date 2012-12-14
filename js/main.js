@@ -9,7 +9,7 @@ $(function(){
         siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
         siberia2: 'поднимаем инфраструктуру в облака, чтобы не занесло снегом',
         siberia3: 'используем надёжную опору из бесценных знаний',
-        siberia4: 'конструкции должны быть адаптивными — знаем с детства',
+        siberia4: 'вдохновлены адаптивными конструкциями',
         siberia5: 'фрилансим в Сибири — с пляжем, солнцем и оптимизмом'
     };
     
@@ -62,7 +62,7 @@ $(function(){
     luckLoop();
 
     var showSiberia = function(sight){
-        var goto = sight || luck;
+        var goto = sight || luck;        
         var walk = 0;
         for(sight in Siberia){
             walk++;
