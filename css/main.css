@@ -52,7 +52,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 h1 {font-weight: normal;font-size: 2.5em;line-height: 1; text-shadow: 1px 1px 0 #000;letter-spacing: -1px; margin:0 0 .5em; }
-h1 span {border-bottom: 1px dashed #CCC;cursor:pointer}
+h1 span {cursor:pointer}
 a { color:#fff;text-decoration:none}
 a:hover {color: #ccc;text-decoration:underline}
 
