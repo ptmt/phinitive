@@ -1,9 +1,14 @@
 $(function(){
 
-    $('.show-team').on('click', function (){
+    $('h1').on('click', function (){
         window.location.hash = $('.team').toggle().is(':visible') ? 'team' : '';
         return false;
     })
+    
+    $('.dots').on('click', function(){
+        window.location.reload();
+    });
+    
     var Siberia = {
         siberia0: 'а ведь когда я открывал браузер, на улице стояло лето',
         siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
@@ -20,14 +25,15 @@ $(function(){
     
     var luck = Math.floor(Math.random()*sights) + 1;
     var destiny = false;
-    if(window.location.hash){     
-        if(/#\d+/.test(window.location.hash)){
-           destiny = +window.location.hash.replace('#','');
+    var predestination = window.location.hash;
+    if(predestination){     
+        if(/#\d+/.test(predestination)){
+           destiny = +predestination.replace('#','');
            if(destiny <= sights) {
                luck = destiny;
            }
         } else {
-            $(window.location.hash.replace('#','.')).show();
+            $(predestination.replace('#','.')).show();
         }
         
     }
@@ -68,7 +74,7 @@ $(function(){
             walk++;
             if(walk == goto){
                 $('body').css('background-image','url(img/'+sight+'.jpg)');
-                $('h1').html(Siberia[sight]);
+                $('h1').html('<span>'+Siberia[sight]+'</span>');
             }
         }
     };
