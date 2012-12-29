@@ -10,12 +10,30 @@ $(function(){
     });
     
     var Siberia = {
-        siberia0: 'а ведь когда я открывал браузер, на улице стояло лето',
-        siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
-        siberia2: 'поднимаем инфраструктуру в облака, чтобы не занесло снегом',
-        siberia3: 'используем надёжную опору из бесценных знаний',
-        siberia4: 'у нас здесь своя атмосфера из адаптивного дизайна и гибких методологий',
-        siberia5: 'фрилансим в Сибири — с пляжем, солнцем и оптимизмом'
+        siberia0: {
+            headline:'а ведь когда я открывал браузер, на улице стояло лето',
+            text:''
+        },
+        siberia1: {
+            headline:'делаем сайты в Сибири, чтобы не мерзнуть',
+            text:''
+        },
+        siberia2: {
+            headline:'поднимаем инфраструктуру в облака, чтобы не занесло снегом',
+            text:''
+        },
+        siberia3: {
+            headline:'используем надёжную опору из бесценных знаний',
+            text:''
+        },
+        siberia4: {
+            headline:'у нас здесь своя атмосфера из адаптивного дизайна и гибких методологий',
+            text:''
+        },
+        siberia5: {
+            headline:'фрилансим в Сибири — с пляжем, солнцем и оптимизмом',
+            text:''
+        }
     };
     
     var sights = 0;
@@ -73,8 +91,11 @@ $(function(){
         for(sight in Siberia){
             walk++;
             if(walk == goto){
+                var headline = Siberia[sight].headline;
+                var paragraph = Siberia[sight].text;
                 $('body').css('background-image','url(img/'+sight+'.jpg)');
-                $('h1').html('<span>'+Siberia[sight]+'</span>');
+                $('h1').html('<span>'+headline+'</span>');
+                if(paragraph) $('.team').prepend('<p>'+paragraph+'</p>');
             }
         }
     };
