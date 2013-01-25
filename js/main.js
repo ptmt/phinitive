@@ -10,36 +10,12 @@ $(function(){
     });
     
     var Siberia = {
-        siberia0: {
-            headline:'а ведь когда я открывал браузер, на улице стояло лето',
-            text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repudiandae eius corporis earum ea accusantium voluptates ratione dicta laborum in magnam culpa illum asperiores quisquam voluptatibus possimus tempora libero porro ipsum non atque labore sunt nisi distinctio veniam repellat molestias! Sequi porro sapiente provident nisi sit incidunt non quis nihil tenetur repellat adipisci quisquam veritatis dolor tempore facilis odit necessitatibus tempora. Quae possimus ad voluptas sunt rerum eveniet nulla ratione doloremque temporibus et doloribus similique quo natus modi nam. Consequuntur accusamus amet reiciendis delectus sit illum soluta molestias quo facilis itaque. Aliquam cum sed assumenda sequi sapiente totam dicta laboriosam distinctio soluta ab recusandae illo eligendi quaerat blanditiis alias quia ex voluptates eaque aliquid omnis rerum veniam hic! Fugiat magnam.',
-            photo:'example.png'
-        },
-        siberia1: {
-            headline:'делаем сайты в Сибири, чтобы не мерзнуть',
-            text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repudiandae eius corporis earum ea accusantium voluptates ratione dicta laborum in magnam culpa illum asperiores quisquam voluptatibus possimus tempora libero porro ipsum non atque labore sunt nisi distinctio veniam repellat molestias! Sequi porro sapiente provident nisi sit incidunt non quis nihil tenetur repellat adipisci quisquam veritatis dolor tempore facilis odit necessitatibus tempora. Quae possimus ad voluptas sunt rerum eveniet nulla ratione doloremque temporibus et doloribus similique quo natus modi nam. Consequuntur accusamus amet reiciendis delectus sit illum soluta molestias quo facilis itaque. Aliquam cum sed assumenda sequi sapiente totam dicta laboriosam distinctio soluta ab recusandae illo eligendi quaerat blanditiis alias quia ex voluptates eaque aliquid omnis rerum veniam hic! Fugiat magnam.',
-            photo:'example.png'
-        },
-        siberia2: {
-            headline:'поднимаем инфраструктуру в облака, чтобы не занесло снегом',
-            text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repudiandae eius corporis earum ea accusantium voluptates ratione dicta laborum in magnam culpa illum asperiores quisquam voluptatibus possimus tempora libero porro ipsum non atque labore sunt nisi distinctio veniam repellat molestias! Sequi porro sapiente provident nisi sit incidunt non quis nihil tenetur repellat adipisci quisquam veritatis dolor tempore facilis odit necessitatibus tempora. Quae possimus ad voluptas sunt rerum eveniet nulla ratione doloremque temporibus et doloribus similique quo natus modi nam. Consequuntur accusamus amet reiciendis delectus sit illum soluta molestias quo facilis itaque. Aliquam cum sed assumenda sequi sapiente totam dicta laboriosam distinctio soluta ab recusandae illo eligendi quaerat blanditiis alias quia ex voluptates eaque aliquid omnis rerum veniam hic! Fugiat magnam.',
-            photo:'example.png'
-        },
-        siberia3: {
-            headline:'используем надёжную опору из бесценных знаний',
-            text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repudiandae eius corporis earum ea accusantium voluptates ratione dicta laborum in magnam culpa illum asperiores quisquam voluptatibus possimus tempora libero porro ipsum non atque labore sunt nisi distinctio veniam repellat molestias! Sequi porro sapiente provident nisi sit incidunt non quis nihil tenetur repellat adipisci quisquam veritatis dolor tempore facilis odit necessitatibus tempora. Quae possimus ad voluptas sunt rerum eveniet nulla ratione doloremque temporibus et doloribus similique quo natus modi nam. Consequuntur accusamus amet reiciendis delectus sit illum soluta molestias quo facilis itaque. Aliquam cum sed assumenda sequi sapiente totam dicta laboriosam distinctio soluta ab recusandae illo eligendi quaerat blanditiis alias quia ex voluptates eaque aliquid omnis rerum veniam hic! Fugiat magnam.',
-            photo:'example.png'
-        },
-        siberia4: {
-            headline:'у нас здесь своя атмосфера из адаптивного дизайна и гибких методологий',
-            text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repudiandae eius corporis earum ea accusantium voluptates ratione dicta laborum in magnam culpa illum asperiores quisquam voluptatibus possimus tempora libero porro ipsum non atque labore sunt nisi distinctio veniam repellat molestias! Sequi porro sapiente provident nisi sit incidunt non quis nihil tenetur repellat adipisci quisquam veritatis dolor tempore facilis odit necessitatibus tempora. Quae possimus ad voluptas sunt rerum eveniet nulla ratione doloremque temporibus et doloribus similique quo natus modi nam. Consequuntur accusamus amet reiciendis delectus sit illum soluta molestias quo facilis itaque. Aliquam cum sed assumenda sequi sapiente totam dicta laboriosam distinctio soluta ab recusandae illo eligendi quaerat blanditiis alias quia ex voluptates eaque aliquid omnis rerum veniam hic! Fugiat magnam.',
-            photo:'example.png'
-        },
-        siberia5: {
-            headline:'фрилансим в Сибири — с пляжем, солнцем и оптимизмом',
-            text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repudiandae eius corporis earum ea accusantium voluptates ratione dicta laborum in magnam culpa illum asperiores quisquam voluptatibus possimus tempora libero porro ipsum non atque labore sunt nisi distinctio veniam repellat molestias! Sequi porro sapiente provident nisi sit incidunt non quis nihil tenetur repellat adipisci quisquam veritatis dolor tempore facilis odit necessitatibus tempora. Quae possimus ad voluptas sunt rerum eveniet nulla ratione doloremque temporibus et doloribus similique quo natus modi nam. Consequuntur accusamus amet reiciendis delectus sit illum soluta molestias quo facilis itaque. Aliquam cum sed assumenda sequi sapiente totam dicta laboriosam distinctio soluta ab recusandae illo eligendi quaerat blanditiis alias quia ex voluptates eaque aliquid omnis rerum veniam hic! Fugiat magnam.',
-            photo:'example.png'
-        }
+        siberia0: 'а ведь когда я открывал браузер, на улице стояло лето',
+        siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
+        siberia2: 'поднимаем инфраструктуру в облака, чтобы не занесло снегом',
+        siberia3: 'бесценные знания — наша надежная опора',
+        siberia4: 'у нас здесь своя атмосфера из адаптивного дизайна и гибких методологий',
+        siberia5: 'фрилансим в Сибири — с пляжем, солнцем и оптимизмом'
     };
     
     var sights = 0;
@@ -97,12 +73,8 @@ $(function(){
         for(sight in Siberia){
             walk++;
             if(walk == goto){
-                var headline = Siberia[sight].headline;
-                var paragraph = Siberia[sight].text;
-                var img = Siberia[sight].photo ? '<img src="./img/inplace/'+Siberia[sight].photo+'">' : '';
                 $('body').css('background-image','url(img/'+sight+'.jpg)');
-                $('h1').html('<span>'+headline+'</span>');
-                if(paragraph) $('.team').prepend('<p>'+img+paragraph+'</p>');
+                $('h1').html('<span>'+Siberia[sight]+'</span>');
             }
         }
     };
