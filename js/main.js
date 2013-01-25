@@ -1,14 +1,14 @@
 $(function(){
 
-    $('h1').on('click', function (){
+    $('h1').on('click', function (e){
         window.location.hash = $('.team').toggle().is(':visible') ? 'team' : '';
         return false;
-    })
+    });
     
     $('.dots').on('click', function(){
         window.location.reload();
     });
-    
+      
     var Siberia = {
         siberia0: 'а ведь когда я открывал браузер, на улице стояло лето',
         siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
@@ -35,13 +35,13 @@ $(function(){
         } else {
             $(predestination.replace('#','.')).show();
         }
-        
     }
     
     var seen = null;
     if(Modernizr.localstorage){
         seen = localStorage.seen ? localStorage.seen.split(',') : [luck];
     }
+        
     var luckLoop = function() {
         if(seen && !destiny){
             var already = false;
@@ -96,4 +96,5 @@ $(function(){
     });
     
     showSiberia(luck);
+    
 });
