@@ -17,7 +17,7 @@ $(function(){
         siberia4: 'своя атмосфера из адаптивного дизайна и гибких методологий',
         siberia5: 'Winter Is Coming',
         siberia6: 'через мнговение увидим лучший коммит за всю историю баскетбола',
-        siberia7: 'iOS, Android и Windows Phone'
+        siberia7: 'for your iOS, Android и Windows Phone'
     };
     
     var sights = 0;
