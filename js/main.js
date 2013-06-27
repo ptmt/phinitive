@@ -6,6 +6,7 @@ $(function(){
     });
     
     $('.dots').on('click', function(){
+        window.location.hash = '';
         window.location.reload();
     });
       
@@ -14,7 +15,7 @@ $(function(){
         siberia1: 'делаем сайты в Сибири, чтобы не мерзнуть',
         siberia2: 'поднимаем инфраструктуру в облака, чтобы не занесло снегом',
         siberia3: 'наши знания — это всегда надежная опора',
-        siberia4: 'своя атмосфера из адаптивного дизайна и гибких методологий',
+        siberia4: 'здесь своя атмосфера из адаптивного дизайна и гибких методологий',
         siberia5: 'Winter Is Coming',
         siberia6: 'и через мнговение мы увидим лучший коммит за всю историю баскетбола',
         siberia7: 'now available for iOS™, Android™ and Windows Phone™'
