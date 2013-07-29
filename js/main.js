@@ -77,7 +77,7 @@ $(function(){
         for(sight in Siberia){
             walk++;
             if(walk == goto){
-                $('body').css('background-image','url(img/'+sight+'.jpg)');
+                $('html').css('background-image','url(img/'+sight+'.jpg)');
                 $('h1').html('<span>'+Siberia[sight]+'</span>' + moreLink);
             }
         }
