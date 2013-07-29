@@ -71,13 +71,14 @@ $(function(){
     luckLoop();
 
     var showSiberia = function(sight){
+        var moreLink = '<span class="phi-more">∞</span>';
         var goto = sight || luck;        
         var walk = 0;
         for(sight in Siberia){
             walk++;
             if(walk == goto){
                 $('body').css('background-image','url(img/'+sight+'.jpg)');
-                $('h1').html('<span>'+Siberia[sight]+'</span>');
+                $('h1').html('<span>'+Siberia[sight]+'</span>' + moreLink);
             }
         }
     };
