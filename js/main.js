@@ -40,8 +40,15 @@ $(function(){
         }
     }
     
-    var seen = null;
-    if(Modernizr.localstorage){
+    var seen = null,
+        localStorage_support = function () {
+            try {
+                return 'localStorage' in window && window['localStorage'] !== null;
+            } catch(e) {
+                return false;
+            }
+        };
+    if(localStorage_support){
         seen = localStorage.seen ? localStorage.seen.split(',') : [luck];
     }
         
