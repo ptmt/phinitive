@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>@prohpetraptor</title>
-        <meta name="description" content="Предсказания по твиттер-ленте">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/normalize.min.css">
-        <style>
-            body {background: url(raptor.jpg);font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;color:white;
-                text-shadow: 0.5em 0.5em 0.5em black, 0em 0em 0.5em black}
-            a {color:white;} a:hover{color:#ccc;}
-            h1 {text-align:center;font-size:5em;}
-            h2, a {font-size:2em; }
-            .db {width: 500px;margin: 0 auto;position:relative;}
-        </style>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>@prohpetraptor</title>
+    <meta name="description" content="Предсказания по твиттер-ленте">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <style>
+        body {background: url(raptor.jpg);font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;color:white;
+        text-shadow: 0.5em 0.5em 0.5em black, 0em 0em 0.5em black}
+        a {color:white;} a:hover{color:#ccc;}
+        h1 {text-align:center;font-size:5em;}
+        h2, a {font-size:2em; }
+        .db {width: 500px;margin: 0 auto;position:relative;}
+    </style>
+</head>
+<body>
 
-       <h1>Я знаю<br/>
+    <h1>Я знаю<br/>
         что вы сделали<br/>
         прошлым<br/>
         твитом</h1>
@@ -28,46 +28,46 @@
             <blockquote class="twitter-tweet" lang="en"></blockquote>
         </div>
 
-        <!--<p><a href="https://twitter.com/jubublik">@jubublik</a> Во-первых, я думаю, что все гей</p>&mdash; А вот и смысл (@prophetraptor) <a href="https://twitter.com/prophetraptor/statuses/426271501034459136">January 23, 2014</a> -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  
-    <script type="text/javascript">
-     var backendUrl = 'https://spreadsheets.google.com/feeds/list/0AmJ8XCVMZ8mUdHJ0aGowXzFIT1dCdnpydFFSLXVkeUE/od6/public/values?alt=json-in-script&callback=loaddb';
+        <script type="text/javascript">
 
-     $(function() {
-        $.get(backendUrl);
-     });
+          // most advanced backend ever built
+          var backendUrl = 'https://spreadsheets.google.com/feeds/list/0AmJ8XCVMZ8mUdHJ0aGowXzFIT1dCdnpydFFSLXVkeUE/od6/public/values?alt=json-in-script&callback=loaddb';
 
-     function loaddb(data) {
-        var id = Math.round(Math.random() * (data.feed.entry.length-1));
-        var predestination = window.location.hash;
-        if(predestination){     
-            console.log (/#\d+/.test(predestination));
-            if(/#\d+/.test(predestination)){
-               id = predestination.replace('#','');
-            }
-        }
-        renderTweet(data.feed.entry, id);
-     }
+          $(function() {
+            $.get(backendUrl);
+          });
 
-     function renderTweet(quotes, id) {
-        $('.quote-id').html('#' + (id+1));
-        $('.twitter-tweet').append('<a href="' + quotes[id].title.$t + '"></a> ');
-        $.getScript('http://platform.twitter.com/widgets.js');
-     }
+          function loaddb(data) {
+            var id = Math.round(Math.random() * (data.feed.entry.length-1));
+            var predestination = window.location.hash;
+            if(predestination){
+                console.log (/#\d+/.test(predestination));
+                if(/#\d+/.test(predestination)){
+                   id = predestination.replace('#','');
+               }
+           }
+           renderTweet(data.feed.entry, id);
+         }
 
-    </script>
+         function renderTweet(quotes, id) {
+           $('.quote-id').html('#' + (id+1));
+           $('.twitter-tweet').append('<a href="' + quotes[id].title.$t + '"></a>');
+           $.getScript('http://platform.twitter.com/widgets.js');
+         }
 
-     <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-28290969-1']);
-          _gaq.push(['_trackPageview']);
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
         </script>
-    </body>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-28290969-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+</body>
 </html>
