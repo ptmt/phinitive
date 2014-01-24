@@ -40,7 +40,7 @@
           });
 
           function loaddb(data) {
-            var id = Math.round(Math.random() * (data.feed.entry.length-1));
+            var id = Math.round(Math.random() * (data.feed.entry.length-1)) + 1;
             var predestination = window.location.hash;
             if(predestination){
                 console.log (/#\d+/.test(predestination));
@@ -52,8 +52,8 @@
          }
 
          function renderTweet(quotes, id) {
-           $('.quote-id').html('#' + (parseInt(id)+1));
-           $('.twitter-tweet').append('<a href="' + quotes[parseInt(id)].title.$t + '"></a>');
+           $('.quote-id').html('#' + (parseInt(id)));
+           $('.twitter-tweet').append('<a href="' + quotes[parseInt(id)-1].title.$t + '"></a>');
            $.getScript('http://platform.twitter.com/widgets.js');
          }
 
