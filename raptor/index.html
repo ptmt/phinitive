@@ -52,8 +52,8 @@
          }
 
          function renderTweet(quotes, id) {
-           $('.quote-id').html('#' + (id+1));
-           $('.twitter-tweet').append('<a href="' + quotes[id].title.$t + '"></a>');
+           $('.quote-id').html('#' + (parseInt(id)+1));
+           $('.twitter-tweet').append('<a href="' + quotes[parseInt(id)].title.$t + '"></a>');
            $.getScript('http://platform.twitter.com/widgets.js');
          }
 
